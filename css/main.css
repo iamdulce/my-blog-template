@@ -67,41 +67,44 @@ nav .profile-link a{
 }
 
 /* --------------------------------main */
-.main-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.main-home{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   height: 100vh;
   background-image: url(../assets/img/main-backg.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.main-section-container{
-  width: 80%;
-  height: 50%;
-  text-align: center;
+.main-home-container{
+  display: grid;
+  grid-column: 2;
+  justify-content: center;
+  margin-top: 80px;
+  height: 350px;
 }
 
-.main-section-container h1{
+.main-home-container h1{
   color: white;
   text-shadow: 3px 3px rgba(139, 139, 139, .3);
   letter-spacing: 5px;
   font-weight: 700;
   font-size: 50px;
-  margin: 0 0 10%;
+  text-align: center;
 }
 
-.button{
+.main-button{
+  width: 100px;
+  height: 50px;
   background-color: #372151;
   border-radius: 2px;
   color: white;
-  font-size: 1em;
+  font-size: 18px;
   font-weight: 700;
-  padding: 15px 20px;
   border: none;
-  display: inline-block;
-  justify-content: center;
-  letter-spacing: 3px;
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  padding: 0 5px;
 }
