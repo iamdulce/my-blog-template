@@ -67,7 +67,7 @@ nav .profile-link a{
 }
 
 /* --------------------------------main */
-main{
+.main-section{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,13 +78,13 @@ main{
   background-position: center;
 }
 
-.main-container{
+.main-section-container{
   width: 80%;
   height: 50%;
   text-align: center;
 }
 
-.main-container h1{
+.main-section-container h1{
   color: white;
   text-shadow: 3px 3px rgba(139, 139, 139, .3);
   letter-spacing: 5px;
