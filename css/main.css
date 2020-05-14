@@ -132,7 +132,7 @@ nav .profile-link a{
 }
 
 .blogs-news-container-img img{
-  width: 85%;
+  width: 80%;
 }
 
 .blogs-news-info-container{
@@ -143,11 +143,11 @@ nav .profile-link a{
   margin-bottom: 35px;
 }
 
-.blogs-posts-list-container{
+.blogs-posts-list{
   padding: 0 50px 40px;
 }
 
-.blogs-posts-list-container h3{
+.blogs-posts-list h3{
   border-bottom: 1px solid #dac5c3; 
   padding-bottom: 20px;
   text-align: center;
@@ -157,4 +157,36 @@ nav .profile-link a{
   border: 1px solid #444054;
   padding: 10px 15px;
   font-size: 12px;
+}
+
+.post-list-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post-list-container .post-container{
+  display: inline-block;
+  height: 100%;
+}
+
+.post-list-container .post-container .post-img-container img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: #444054;
+  border-top: 35px solid #dac5c3;
+  text-align: center;
+}
+
+footer>p {
+  margin-top: 35px;
+  color: white;
 }
