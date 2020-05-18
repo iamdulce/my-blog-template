@@ -186,6 +186,8 @@ nav .profile-link a{
 
 .blogpost-img-container img{
   width: 100%;
+  height: 700px;
+  object-fit: cover;
 }
 
 .blogpost-main-container{
