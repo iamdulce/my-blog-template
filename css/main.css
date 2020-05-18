@@ -167,15 +167,10 @@ nav .profile-link a{
 
 .post-list-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100%;
   gap: 40px;
   justify-content: center;
-}
-
-.post-list-container .post-container{
-  display: inline-block;
-  height: 100%;
 }
 
 .post-list-container .post-container .post-img-container img{
@@ -271,7 +266,7 @@ nav .profile-link a{
 
 .projects-main-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100%;
   gap: 40px;
   justify-content: center;
