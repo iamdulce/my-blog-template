@@ -169,7 +169,7 @@ nav .profile-link a{
   display: grid;
   grid-template-columns: repeat(auto-fill, 30%);
   width: 100%;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -184,9 +184,98 @@ nav .profile-link a{
   object-fit: cover;
 }
 
-/* --------------------------------Blogpost article */
+/* --------------------------------blogpost article */
+.blogpost-img-container{
+  padding: 0 50px 40px;
+}
 
+.blogpost-img-container img{
+  width: 100%;
+}
 
+.blogpost-main-container{
+  padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3{
+  border-bottom: 1px solid #dac5c3;
+  padding-bottom: 20px;
+}
+
+.blogpost-main-container article h1{
+  font-size: 35px;
+}
+
+/* --------------------------------contact-section */
+.contact-main-container{
+  width: 100%;
+  min-height: 200px;
+  background-color: #dac5c3;
+  text-align: center;
+}
+
+.contact-main-container div{
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+
+.contact-main-container div a{
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.contact-main-container .contact-left, .contact-right{
+  text-align: initial;
+  margin-top: 70px;
+}
+
+.contact-main-container img{
+  width: 100px;
+}
+
+/* --------------------------------profile */
+.profile-main{
+  display: grid;
+}
+
+.profile-container{
+  background-color: #dac5c3;
+  padding: 40px 50px;
+}
+
+.profile-main-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr;
+  justify-content: center;
+}
+
+.profile-main-img-container{
+  grid-column: 1;
+}
+
+.profile-main-img-container img {
+  width: 80%;
+}
+
+.profile-projects{
+  padding: 0 50px 40px;
+}
+
+.profile-projects h3{
+  border-bottom: 1px solid #dac5c3; 
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.projects-main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+}
 
 /* --------------------------------footer */
 footer{
