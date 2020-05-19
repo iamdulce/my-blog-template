@@ -223,7 +223,7 @@ nav .profile-link a{
   padding-bottom: 5px;
 }
 
-.contact-main-container .contact-left,.contact-right{
+.contact-main-container .contact-left{
   text-align: initial;
   margin-top: 30px;
   display: block;
@@ -254,7 +254,7 @@ nav .profile-link a{
 .profile-main-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2fr;
+  grid-template-rows: 1fr;
   justify-content: center;
 }
 
@@ -278,7 +278,7 @@ nav .profile-link a{
 
 .projects-main-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   gap: 40px;
   justify-content: center;
@@ -296,4 +296,65 @@ footer{
 footer>p {
   margin-top: 35px;
   color: white;
+}
+
+
+/* --------------------------------responsive design */
+@media screen and (max-width:900px){
+  .blogs-main-new{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;;
+  }
+
+  .blogs-news-container-img{
+    grid-row: 2;
+  }
+
+  .blogs-news-info-container{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .profile-main-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .profile-main-img-container{
+    grid-row: 1;
+  }
+
+  .profile-main-img-container img{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:640px){
+  .projects-main-container{
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-main-container{
+    flex-wrap: wrap;
+    padding: 40px 50px 40px;
+    width: auto;
+  }
+
+  .contact-main-container div{
+    display: block;
+    text-align: center;
+  }
+
+  .contact-main-container img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-main-container .contact-right{
+    margin-top: 0;
+  }
+  
+  .contact-main-container .contact-left{
+    margin-top: 0;
+  }
 }
