@@ -206,14 +206,15 @@ nav .profile-link a{
 /* --------------------------------contact-section */
 .contact-main-container{
   width: 100%;
-  min-height: 200px;
-  background-color: #dac5c3;
-  text-align: center;
+  min-height: 150px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contact-main-container div{
-  display: inline-block;
-  width: 49.5%;
+  display: flex;
   height: 100%;
 }
 
@@ -222,13 +223,22 @@ nav .profile-link a{
   padding-bottom: 5px;
 }
 
-.contact-main-container .contact-left, .contact-right{
+.contact-main-container .contact-left,.contact-right{
   text-align: initial;
-  margin-top: 70px;
+  margin-top: 30px;
+  display: block;
+}
+
+.contact-main-container .contact-right{
+  text-align: initial;
+  margin-top: 30px;
+  display: block;
 }
 
 .contact-main-container img{
-  width: 100px;
+  padding-right: 10px;
+  width: 80px;
+  height: 80px;
 }
 
 /* --------------------------------profile */
